@@ -173,7 +173,7 @@ Ammo().then((Ammo) => {
     let mass = 3;
 
     var marble_loader = new THREE.TextureLoader(manager);
-    var marbleTexture = marble_loader.load('./src/jsm/earth.jpg');
+    var marbleTexture = marble_loader.load('./dist/jsm/earth.jpg');
     marbleTexture.wrapS = marbleTexture.wrapT = THREE.RepeatWrapping;
     marbleTexture.repeat.set(1, 1);
     marbleTexture.anisotropy = 1;
@@ -245,7 +245,7 @@ Ammo().then((Ammo) => {
 
     //import beach ball texture
     var texture_loader = new THREE.TextureLoader(manager);
-    var beachTexture = texture_loader.load('./src/jsm/BeachBallColor.jpg');
+    var beachTexture = texture_loader.load('./dist/jsm/BeachBallColor.jpg');
     beachTexture.wrapS = beachTexture.wrapT = THREE.RepeatWrapping;
     beachTexture.repeat.set(1, 1);
     beachTexture.anisotropy = 1;
@@ -352,7 +352,7 @@ Ammo().then((Ammo) => {
     cursorHoverObjects.push(linkBox);
   }
 
-  //create Ammo.js body to add solid mass to "Ryan Floyd Software Engineer"
+  //create Ammo.js body to add solid mass to "Karim Press"
   function ryanFloydWords(x, y, z) {
     const boxScale = { x: 46, y: 3, z: 2 };
     let quat = { x: 0, y: 0, z: 0, w: 1 };
@@ -373,21 +373,21 @@ Ammo().then((Ammo) => {
     addRigidPhysics(linkBox, boxScale);
   }
 
-  //loads text for Ryan Floyd Mesh
+  //loads text for Karim Press Mesh
   function loadRyanText() {
     var text_loader = new THREE.FontLoader();
 
-    text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
+    text_loader.load('./dist/jsm/Roboto_Regular.json', function (font) {
       var xMid, text;
 
-      var color = 0xfffc00;
+      var color = 0x1dbdbb;
 
       var textMaterials = [
         new THREE.MeshBasicMaterial({ color: color }), // front
         new THREE.MeshPhongMaterial({ color: color }), // side
       ];
 
-      var geometry = new THREE.TextGeometry('RYAN FLOYD', {
+      var geometry = new THREE.TextGeometry('Karim Press', {
         font: font,
         size: 3,
         height: 0.5,
@@ -421,17 +421,17 @@ Ammo().then((Ammo) => {
   function loadEngineerText() {
     var text_loader = new THREE.FontLoader();
 
-    text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
+    text_loader.load('./dist/jsm/Roboto_Regular.json', function (font) {
       var xMid, text;
 
-      var color = 0x00ff08;
+      var color = 0xf4f3ee;
 
       var textMaterials = [
         new THREE.MeshBasicMaterial({ color: color }), // front
         new THREE.MeshPhongMaterial({ color: color }), // side
       ];
 
-      var geometry = new THREE.TextGeometry('SOFTWARE ENGINEER', {
+      var geometry = new THREE.TextGeometry(' DIGITAL COMMUNICATION', {
         font: font,
         size: 1.5,
         height: 0.5,
@@ -1013,32 +1013,32 @@ Ammo().then((Ammo) => {
       Math.PI * 0.17
     );
 
-    createBillboardRotated(
-      -17,
-      1.25,
-      -75,
-      billboardTextures.homeSweetHomeTexture,
-      URL.githubHomeSweetHome,
-      Math.PI * 0.15
-    );
+    // createBillboardRotated(
+    //   -17,
+    //   1.25,
+    //   -75,
+    //   billboardTextures.homeSweetHomeTexture,
+    //   URL.githubHomeSweetHome,
+    //   Math.PI * 0.15
+    // );
 
     ryanFloydWords(11.2, 1, -20);
-    createTextOnPlane(-70, 0.01, -48, inputText.terpSolutionsText, 20, 40);
-    createTextOnPlane(-42, 0.01, -53, inputText.bagholderBetsText, 20, 40);
-    createTextOnPlane(-14, 0.01, -49, inputText.homeSweetHomeText, 20, 40);
+    // createTextOnPlane(-70, 0.01, -48, inputText.terpSolutionsText, 20, 40);
+    // createTextOnPlane(-42, 0.01, -53, inputText.bagholderBetsText, 20, 40);
+    // createTextOnPlane(-14, 0.01, -49, inputText.homeSweetHomeText, 20, 40);
 
-    createBox(
-      12,
-      2,
-      -70,
-      4,
-      4,
-      1,
-      boxTexture.Github,
-      URL.gitHub,
-      0x000000,
-      true
-    );
+    // createBox(
+    //   12,
+    //   2,
+    //   -70,
+    //   4,
+    //   4,
+    //   1,
+    //   boxTexture.Github,
+    //   URL.gitHub,
+    //   0x000000,
+    //   true
+    // );
 
     // createBox(
     //   4,
@@ -1086,7 +1086,7 @@ Ammo().then((Ammo) => {
       4,
       1,
       boxTexture.mail,
-      'mailto:arfloyd7@gmail.com',
+      'mailto:info@karimpress.com',
       0x000000,
       false
     );
@@ -1104,32 +1104,32 @@ Ammo().then((Ammo) => {
     //   false
     // );
 
-    createBox(
-      35,
-      2,
-      -70,
-      4,
-      4,
-      1,
-      boxTexture.writing,
-      URL.devTo,
-      0x000000,
-      false
-    );
+    // createBox(
+    //   35,
+    //   2,
+    //   -70,
+    //   4,
+    //   4,
+    //   1,
+    //   boxTexture.writing,
+    //   URL.devTo,
+    //   0x000000,
+    //   false
+    // );
 
     // floatingLabel(3.875, 4.5, -70, 'Twitter');
     floatingLabel(11.875, 4.5, -70, 'Github');
     floatingLabel(19.125, 4.5, -70, 'LinkedIn');
     floatingLabel(26.875, 4.5, -70, 'Email');
     // floatingLabel(35, 6.5, -70, '  Static \nWebsite');
-    floatingLabel(35, 6.5, -70, '   How I \nmade this');
+    // floatingLabel(35, 6.5, -70, '   How I \nmade this');
     // floatingLabel(44, 6.5, -70, '   How I \nmade this');
 
     allSkillsSection(-50, 0.025, 20, 40, 40, boxTexture.allSkills);
     allSkillsSection(61, 0.025, 13, 30, 60, inputText.activities);
-    allSkillsSection(8.5, 0.025, 54, 7, 3.5, boxTexture.skrillex);
-    allSkillsSection(9, 0.01, 45, 15, 15, boxTexture.edmText);
-    allSkillsSection(9, 0.01, 20, 21, 10.5, inputText.staticPortfolio);
+    // allSkillsSection(8.5, 0.025, 54, 7, 3.5, boxTexture.skrillex);
+    // allSkillsSection(9, 0.01, 45, 15, 15, boxTexture.edmText);
+    // allSkillsSection(9, 0.01, 20, 21, 10.5, inputText.staticPortfolio);
 
     //lensflare
     createLensFlare(50, -50, -800, 200, 200, boxTexture.lensFlareMain);
@@ -1151,9 +1151,9 @@ Ammo().then((Ammo) => {
     simpleText(9, 0.01, 5, instructionsText, 1.25);
 
     simpleText(23, 0.01, -60, touchText, 1.5);
-    simpleText(-50, 0.01, -5, 'SKILLS', 3);
+    simpleText(-50, 0.01, -5, 'SERVICES', 3);
     simpleText(-42, 0.01, -30, 'EXPERIENCE', 3);
-    simpleText(61, 0.01, -15, 'TIMELINE', 3);
+    simpleText(61, 0.01, -15, 'ABOUT US', 3);
 
     wallOfBricks();
     createTriangle(63, -55);
