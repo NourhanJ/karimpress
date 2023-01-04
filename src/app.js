@@ -1027,18 +1027,18 @@ Ammo().then((Ammo) => {
     // createTextOnPlane(-42, 0.01, -53, inputText.bagholderBetsText, 20, 40);
     // createTextOnPlane(-14, 0.01, -49, inputText.homeSweetHomeText, 20, 40);
 
-    // createBox(
-    //   12,
-    //   2,
-    //   -70,
-    //   4,
-    //   4,
-    //   1,
-    //   boxTexture.Github,
-    //   URL.gitHub,
-    //   0x000000,
-    //   true
-    // );
+    createBox(
+      12,
+      2,
+      -70,
+      4,
+      4,
+      1,
+      boxTexture.Instagram,
+      URL.instagram,
+      0x000000,
+      true
+    );
 
     // createBox(
     //   4,
@@ -1118,7 +1118,7 @@ Ammo().then((Ammo) => {
     // );
 
     // floatingLabel(3.875, 4.5, -70, 'Twitter');
-    floatingLabel(11.875, 4.5, -70, 'Github');
+    floatingLabel(11.875, 4.5, -70, 'Instagram');
     floatingLabel(19.125, 4.5, -70, 'LinkedIn');
     floatingLabel(26.875, 4.5, -70, 'Email');
     // floatingLabel(35, 6.5, -70, '  Static \nWebsite');
