@@ -21,8 +21,8 @@ boxTexture.edmText = '../src/jsm/EDM.png';
 boxTexture.writing = '../src/jsm/writing.png';
 
 //material textures
-let stoneTexture = '../src/jsm/stone.png';
-let woodTexture = '../src/jsm/woodTexture.jpg';
+let stoneTexture = './src/jsm/stone.png';
+let woodTexture = './src/jsm/woodTexture.jpg';
 
 //text
 let inputText = {};
