@@ -8,7 +8,7 @@ billboardTextures.homeSweetHomeTexture =
 
 //box textures
 let boxTexture = {};
-boxTexture.Github = './src/jsm/githubLogo.png';
+boxTexture.Instagram = './src/jsm/instagram.png';
 boxTexture.twitter = './src/jsm/twitter.png';
 boxTexture.LinkedIn = './src/jsm/linkedInLogo.png';
 boxTexture.mail = './src/jsm/envelope.png';
@@ -43,10 +43,10 @@ URL.terpsolutions =
 URL.ryanfloyd = 'https://ryanfloyd.io';
 URL.bagholderBets = 'https://bagholder-bets.herokuapp.com';
 URL.homeSweetHomeURL = 'https://github.com/MrRyanFloyd/home-sweet-127.0.0.1';
-URL.gitHub = 'https://github.com/MrRyanFloyd/Portfolio_2020';
+URL.gitHub = 'https://instagram.com/karim.press?igshid=OGQ2MjdiOTE=';
 URL.twitter = 'https://twitter.com/0xFloyd';
-URL.LinkedIn = 'https://www.linkedin.com/in/ryan-floyd/';
-URL.email = 'https://mailto:arfloyd7@gmail.com';
+URL.LinkedIn = 'https://www.linkedin.com/company/karim-press/';
+URL.email = 'https://mailto:info@karimpress.com';
 URL.githubBagholder = 'https://github.com/MrRyanFloyd/bagholder-bets';
 URL.githubHomeSweetHome = 'https://github.com/MrRyanFloyd/home-sweet-127.0.0.1';
 URL.devTo =
